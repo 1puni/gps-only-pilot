@@ -1,0 +1,16 @@
+[project]
+name = "gps-only-pilot"
+version = "0.1.0"
+description = "Standalone GPS-only autopilot for the BTS7960 drill-motor rig"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = [
+    "paho-mqtt>=2.1.0",
+    "pigpio>=1.78",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

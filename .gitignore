@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+autopilot.env
+calibration.json
+learned_calibration.json
+route.json
+*.log
