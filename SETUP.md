@@ -35,6 +35,10 @@ Manual proxy mode requires a separately configured motor-web service and does
 not make automatic control available without calibration.
 
 NMEA UDP port 10110 is preferred; phone GPS becomes fallback when it goes stale.
+The source used on the boat is a LilyGO T-Deck Plus running the experimental
+[Meshtastic NMEA-broadcast fork](https://github.com/1puni/meshtastic-firmware),
+which sends its u-blox M10's `$GNRMC`/`$GNGGA` at 3 Hz; any NMEA-0183-over-UDP
+source on the same port works.
 Set `AUTOPILOT_NMEA_UDP_PORT` empty to disable input. Status UDP can be disabled
 with an empty `AUTOPILOT_STATUS_UDP_PORT` (as in the example); choose a broadcast
 destination appropriate to your isolated network before enabling it.
